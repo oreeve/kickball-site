@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>
+      <%= @position %>
+    </h1>
+
+    <ul>
+      <% @team_data.each do |value| %>
+       <li><%= value[@position]%></li>
+        <% end %>
+    </ul>
+    <a href="/positions">All positions</a>
+  </body>
+</html>
